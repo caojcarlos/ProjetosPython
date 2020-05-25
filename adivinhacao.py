@@ -8,11 +8,8 @@ Created on Mon May 25 07:12:03 2020
 Objetivo: Programa Basico para jogo de Adivinhacao
 """
 import random
-import os
 
 sorteado = random.randrange(1,100)
-
-print(sorteado)
 
 jogador = int(input('Digite um numero entre [1, 100]: '))
 
@@ -26,7 +23,8 @@ while (jogador != sorteado):
     else:
         break
     erro += 1
+ 
     jogador = int(input('Tente novamente, digite um numero entre [1, 100]: '))    
 
-print ('Parabens voce acertou em {}'. format(str(erro + 1)))
+print ('Parabens voce acertou em {} tentativas'. format(str(erro + 1)))
     
